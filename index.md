@@ -21,9 +21,11 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 *Give a very high-level description of any core gameplay mechanics*
 
 - *Use commands to go in and out of items/file directories (I.E., if you are in a dorm, you would do cd refrigerator to go to the refrigerator)*
-- *Gameplay Mechanic #2*
-- *Gameplay Mechanic #3*
-- *Gameplay Mechanic #4*
+- *Use ls to list all items in a given are or room (I.E., I would do ls after I cd into a fridge to see its contents)*
+- *Use color coding to indicate what items you can pick up or not(I.E., An item that can be picked up would be coded white)*
+- *Different items will be color coded to match their equivalants in bash (I.E., something you can go into will be color coded like a folder, something thats runable will be color coded to match, items that are white can be picked up)*
+- *Use commands to utilize items(I.E., use the ./sh command to utilize what item you want to use via executing the file)*
+- *In case someone is stuck, there will be a help command that lists all of the embedded commands in the game(I.E., if someone is having trouble with the cd command, help can be used to further explain and elaborate on how to use the cd command)*
 
 # Learning Aspects
 
