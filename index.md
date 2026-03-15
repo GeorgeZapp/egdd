@@ -1,4 +1,4 @@
-# REPLACE THIS WITH YOUR GAME NAME
+# Command the Dungeon
 
 ## Elevator Pitch
 
