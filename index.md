@@ -20,7 +20,7 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 *Give a very high-level description of any core gameplay mechanics*
 
-- *Gameplay Mechanic #1*
+- *Use commands to go in and out of items/file directories (I.E., if you are in a dorm, you would do cd refrigerator to go to the refrigerator)*
 - *Gameplay Mechanic #2*
 - *Gameplay Mechanic #3*
 - *Gameplay Mechanic #4*
