@@ -4,7 +4,6 @@
 
 You wake up in some weird, dimly-lit room, not knowing where you are or how you got there. All you know is that you need to escape this room. Throughout the game, you the player will be navigating various rooms and solving puzzles via a command terminal with bash commands. Be warned though, as one mistake could cost you your life.
 
-
 ## Influences (Brief)
 
 - *Influence #1*:
