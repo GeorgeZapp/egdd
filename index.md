@@ -31,11 +31,14 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 ## Learning Domains
 
-*Briefly list any and all of the disciplines and learning domains for this subject.*
+- Navigating the Terminal
+- Bash Command Programming
 
 ## Target Audiences
 
-*Who are your learners?*
+* Intermediate programmers with some prior knowledge
+* Puzzle Solvers, particuarly those adept with escape rooms
+* Users who frequently interact with the terminal/Bash
 
 ## Target Contexts
 
@@ -45,16 +48,17 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 *Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
 
-- *Short Name*: *Formal Learning Objective #1*
-- *Short Name*: *Formal Learning Objective #2*
-- *Short Name*: *Formal Learning Objective #3*
+- Movement Through Files: By the end of the lesson, players will be able to competently use the cd command to move up and down different file systems.
+- Listing Every File: By the end of the lesson, players will be able to competently use the ls command to list all of the files in a given directory.
+- Executing Files: By the end of the lesson, players will be able to competently use the sh command to run files inside of the terrminal.
 
 ## Prerequisite Knowledge
 
 *What do they need to know prior to trying this game?*
 
-- *Prerequisite Learning Objective #1*
-- *Prerequisite Learning Objective #2*
+- Prior to the game, players need to be somewhat familiar with the terminal.
+- Prior to the game, players need to be familiar with file navigation.
+- Prior to the game, players should have a basic grasp on simple puzzles and logic.
 
 ## Assessment Measures
 
