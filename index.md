@@ -86,19 +86,16 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 *Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.*
 
-- *Player mode #1*: *Description*
-- *Player mode #2*: *Description*
-- *etc.*
+- Single-player: You navigate through a short series of rooms
 
 # Gameplay Objectives
 
-- *Primary Objective #1*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
+- Advance to the next level:
+    - Description: Get the door unlocked and move on to the next level. 
+    - Alignment: This aligns with the learning objects because
 - *Primary Objective #2*:
     - Description: *Description*
     - Alignment: *Describe how this aligns with one or more learning objectives*
-- *etc.*
 
 # Procedures/Actions
 
