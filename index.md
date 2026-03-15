@@ -6,27 +6,30 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 ## Influences (Brief)
 
-- *Influence #1*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #2*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #3*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+- Kings Quest:
+  - Medium: Video Game (Text Base, DOS, Exploratory)
+  - Explanation: Uses a large variety of command inputs for the controls and actions, matches stylistically.
+- Oregon Trail:
+  - Medium: Video Game (Text Base, DOS, Resource Management)
+  - Explanation: Uses command inputs for most of the controls, resource management is key.
+- Riddle School:
+  - Medium: Video Game (Flash, Newgrounds, Puzzle Solving)
+  - Explanation: Focus on puzzles and room navigation, clear linear flow on progression, one of the more popular games in the genre our game is in.
 
 ## Core Gameplay Mechanics (Brief)
 
 *Give a very high-level description of any core gameplay mechanics*
 
-- Use commands to go in and out of items/file directories (I.E., if you are in a dorm, you would do `cd` refrigerator to go to the refrigerator)
-- Use ls to list all items in a given are or room (I.E., I would do `ls` after I `cd` into a fridge to see its contents)
-- Use color coding to indicate what items you can pick up or not(I.E., An item that can be picked up would be coded white)
-- Use commands to equip and move items(I.E., if you had a key lying around, then you would use `mv` to equip the key in a locked room)
-- Different items will be color coded to match their equivalants in bash (I.E., something you can go into will be color coded like a folder, something thats runable will be color coded to match, items that are white can be picked up)
-- Use commands to utilize items(I.E., use the `./sh command` to utilize what item you want to use via executing the file)
-- In case someone is stuck, there will be a `help` command that lists all of the embedded commands in the game(I.E., if someone is having trouble with the `cd` command, `help` can be used to further explain and elaborate on how to use the cd command)
+- Use commands to go in and out of items/file directories (I.E., if you are in a dorm, you would do `cd` refrigerator to go to the refrigerator).
+- Use ls to list all items in a given are or room (I.E., I would do `ls` after I `cd` into a fridge to see its contents).
+- Use color coding to indicate what items you can pick up or not(I.E., An item that can be picked up would be coded white).
+- Use commands to equip and move items(I.E., if you had a key lying around, then you would use `mv` to equip the key in a locked room).
+- Different items will be color coded to match their equivalants in bash (I.E., something you can go into will be color coded like a folder, something thats runable will be color coded to match, items that are white can be picked up).
+- Use commands to utilize items(I.E., use the `./sh command` to utilize what item you want to use via executing the file).
+- In case someone is stuck, there will be a `help` command that lists all of the embedded commands in the game(I.E., if someone is having trouble with the `cd` command, `help` can be used to further explain and elaborate on how to use the `cd` command).
+- If there is a possibility, be able to combine the two items(I.E., if there was an item that needed two or more inputs, then the `cat[item1][item2]` command could be useful).
+- If a player wants to, they can have the ability to quit via the ctrl + c command.
+- For running an overall level, the command `sudo` can be utilized.
 
 # Learning Aspects
 
@@ -65,14 +68,16 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 *Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
 
-
+- Given a file stored in a directory, access that file.
+- Given a list stored in a variable and an index, identify the value at that position.
+- Given a list stored in a variable and a subscript, identify the values at that position.
 
 # What sets this project apart?
 
 *Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
 - Most command terminal activities focus strictly on command writing, this can have fun mechanics and fast-paced gameplay.
-- The gameplay mechanics are supposted to mimic the feel of navigating a real file system, with a bit of abstraction, allowing the player to have fun doing tasks connected to learning, while also gaining those real world skills connected to the learning objective.
+- The gameplay mechanics are supposted to mimic the feel of navigating a real file system, with a bit of abstraction, allowing the player to have fun doing tasks connected to learning, while also gaining those real world skills connected to the learning objectives.
 
 # Player Interaction Patterns and Modes
 
@@ -97,7 +102,10 @@ This is a game for one person, they use the keyboard to interact with the game w
 
 # Procedures/Actions
 
-*Describe the control scheme and what actions a user can take in the game.*
+All actions are done via an in game terminal. This includes:
+- moving in and out of places via the cd command
+- accessing the list of items via the ls command
+- interacting with objects via the sh command
 
 # Rules
 
@@ -132,7 +140,7 @@ This is a game for one person, they use the keyboard to interact with the game w
 
 ## Story (Brief)
 
-*The Summary or TL;DR version of below*
+You are trapped in a room, with no clue why you are there, or how you ended up there. It is your job to escape it in as little time as possible. (NOTE: The player's total game time will not be tracked, and does not affect the gameplay at all.)
 
 ## Storyboarding
 
@@ -142,7 +150,7 @@ This is a game for one person, they use the keyboard to interact with the game w
 
 ## Aethestics
 
-*Give a sense of the aesthetics of your game, the spirit and atmosphere. Use descriptive, evocative words that can help the reader understand the emotional response of your game.*
+The aesthetics should be semi cartoony, but down to earth style that converys a tense atmosphere. Limited color pallete to match old DOS games, should only have a maximum of 16. Art should be done in flat colors, possibly vectorized drawings.
 
 ## Graphical
 
