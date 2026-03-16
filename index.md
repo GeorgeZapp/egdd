@@ -21,8 +21,6 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 ## Core Gameplay Mechanics (Brief)
 
-*Give a very high-level description of any core gameplay mechanics*
-
 - Use commands to go in and out of items/file directories (I.E., if you are in a dorm, you would do `cd` refrigerator to go to the refrigerator).
 - Use ls to list all items in a given are or room (I.E., I would do `ls` after I `cd` into a fridge to see its contents).
 - Use color coding to indicate what items you can pick up or not(I.E., An item that can be picked up would be coded white).
@@ -54,15 +52,11 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 ## Learning Objectives
 
-*Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
-
 - Movement Through Files: By the end of the lesson, players will be able to competently use the cd command to move up and down different file systems.
 - Listing Every File: By the end of the lesson, players will be able to competently use the ls command to list all of the files in a given directory.
 - Executing Files: By the end of the lesson, players will be able to competently use the sh command to run files inside of the terrminal.
 
 ## Prerequisite Knowledge
-
-*What do they need to know prior to trying this game?*
 
 - Prior to the game, players need to be somewhat familiar with the terminal.
 - Prior to the game, players need to be familiar with file navigation.
@@ -70,15 +64,11 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 ## Assessment Measures
 
-*Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
-
 - Given a file stored in a directory, access that file.
 - Given a list stored in a variable and an index, identify the value at that position.
 - Given a list stored in a variable and a subscript, identify the values at that position.
 
 # What sets this project apart?
-
-*Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
 - Most command terminal activities focus strictly on command writing, this can have fun mechanics and fast-paced gameplay.
 - The gameplay mechanics are supposted to mimic the feel of navigating a real file system, with a bit of abstraction, allowing the player to have fun doing tasks connected to learning, while also gaining those real world skills connected to the learning objectives.
@@ -90,8 +80,6 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 This is a game for one person, they use the keyboard to interact with the game world via command inputs.
 
 ## Player Modes
-
-*Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.*
 
 - Single-player: You navigate through a short series of rooms
 
@@ -113,7 +101,6 @@ All actions are done via an in game terminal. This includes:
 
 # Rules
 
-*What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
 - If the player uses the wrong command, then a prompt appears saying the action is invalid
 - If the player goes into a directory, the scenery changes to reflect that (I.E., if you `cd` into a fridge, the scenery would zoom into the fridge)
 - If the player attempts to access an item they cannot, a prompt will appear saying the action is invalid
@@ -157,12 +144,7 @@ All actions are done via an in game terminal. This includes:
 
 ![Ending](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard6.PNG)
 
-
 ## Feedback
-
-*Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
-
-*Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
 
 * Inputting a command will immediately show you either a text prompt ("Task succeeded") or an ainimation of you doing the task if input was valid. If not, will prompt you saying it is incorrect
 * When you inspect an object, the game zooms in on that object
@@ -187,7 +169,12 @@ You are trapped in a room, with no clue why you are there, or how you ended up t
 
 ## Storyboarding
 
-*Go into as much detail as needs be to visually convey the Dynamics of your game. Be detailed. Create storyboards and freeze frame images that concisely capture important key elements of your game. You are strongly recommended to sketch pictures on paper and embed them here. Be sure make it clear how previously-described mechanics come through in the dynamics.*
+![Example](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard2.PNG)
+![Example of using commands in other areas, and going back](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard3.PNG)
+![Listing items](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard1.PNG)
+![Using an Item](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard4.PNG)
+![Unlocking a door](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard5.PNG)
+![Ending](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard6.PNG)
 
 # Assets Needed
 
@@ -206,13 +193,9 @@ The aesthetics should be semi cartoony, but down to earth style that converys a 
 
 ## Audio
 
-*Game region/phase/time are ways of designating a particularly important place in the game.*
-
 - Music List (Ambient sound)
   - Electronic Trance music like the [![Riddle School OST](https://i.ytimg.com/vi/qTSGnjoQA2A/hqdefault.jpg?sqp=-oaymwExCNACELwBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYYiBiKGIwDw==&rs=AOn4CLAQ4JtrquOvC2llCpZjTLp4a3dwqA)](https://www.youtube.com/playlist?list=PLG_KWhLq4Z4uEGxumMQ4yoewTcExIV3nh)
-  
-*Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
-
+ 
 - Sound List (SFX)
   - All of these sounds would need to be folied at a later date
   - Equip Item
