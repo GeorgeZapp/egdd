@@ -130,7 +130,7 @@ All actions are done via an in game terminal. This includes:
 
 ## Core Gameplay Mechanics (Detailed)
 
-- Movement: Via the command prompt at the bottom of the screen. Uses `cd`, or "change directory." Also used to inspect items, like you can do "cd fridge" to go towards the fridge. `cd ..` allows you to go back viewing the entire room.
+- Movement: Via the command prompt at the bottom of the screen. Uses `cd`, or "change directory." Also used to inspect items, like you can do `cd fridge` to go towards the fridge. `cd ..` allows you to go back viewing the entire room.
 - Listing Items: Via the command prompt at the bottom of the screen. Uses `ls.` Shows the player a list of all items that are in the current room. 
 - Picking up Items: the `mv` command to move an item to your inventory. Could also be used to interact with items physically.
 - Color Coding: In the command prompt, different types of items will be color coded, simmialr to how they are in actual bash programming. Items like containers or rooms that you can go into and inpect closely will appear blue, puzzles or interactables will be green and have the ".c" suffix. Items you can pick up could be labeled with ".png" or something simmilar
