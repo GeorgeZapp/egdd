@@ -130,17 +130,33 @@ All actions are done via an in game terminal. This includes:
 
 ## Core Gameplay Mechanics (Detailed)
 
-- Movement: Via the command prompt at the bottom of the screen. Uses `cd`, or "change directory." Also used to inspect items, like you can do `cd fridge` to go towards the fridge. `cd ..` allows you to go back viewing the entire room.
-- Listing Items: Via the command prompt at the bottom of the screen. Uses `ls.` Shows the player a list of all items that are in the current room. 
-- Picking up Items: the `mv` command to move an item to your inventory. Could also be used to interact with items physically.
-- Color Coding: In the command prompt, different types of items will be color coded, simmialr to how they are in actual bash programming. Items like containers or rooms that you can go into and inpect closely will appear blue, puzzles or interactables will be green and have the ".c" suffix. Items you can pick up could be labeled with ".png" or something simmilar
-- Using Items: equip an item with the `cat` command. Item will then be moved to the players inventory. 
+- Movement: Via the command prompt at the bottom of the screen. Uses "cd," or "change directory." Also used to inspect items, like you can do "cd fridge" to go towards the fridge. "cd .." allows you to go back viewing the entire room.
+
+![Example](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard2.PNG)
+![Example of using commands in other areas, and going back](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard3.PNG)
+
+- Listing Items: Via the command prompt at the bottom of the screen. Uses "ls." Shows the player a list of all items that are in the current room. 
+
+
+![Listing items](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard1.PNG)
+
+
+- Picking up Items: the "mv" command to move an item to your inventory. Could alsob eused to interact with items physically.
+- Color Coding: Int he command prompt, different types of items will be color coded, simmialr to how they are in actual bash programming. Items like containers or rooms that you can go into and inpect closely will appear blue, puzzles or interactables will be green and have the ".c" suffix. Items you can pick up could be labeled with ".png" or something simmilar
+- Using Items: equip an item with the "cat" command., Item will then be moved to the players inventory. 
+
+![Using an Item](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard4.PNG)
+![Unlocking a door](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard5.PNG)
+
 - Inventory: Will always be shown in the directory as a folder at all times, regardless of location. Command will be sometihng like "cd inventory," to go into your inventory
-- Combining Items: Would use `cat [item 1] [item 2]` to combine stuff, both files would then be combined in the inventory
-- Puzzles and Interactables: run with `sudo` command in the terminal. Labeled as .c files. Then, depending on the puzzle, a prompt will appear in the terminal showing how the puzzle works, and what to type.
-- Help Command: `help` in the command terminal. Lists all possible commands and their uses in the players terminal. you can also do `-h` on a command to get a bit more of a detailed description of their mechanics. I.E., `cd -h` will show you a description of the cd command
+- Combining Items: Would use "cat [item 1] [item 2]" to combine stuff, both files would then be combined in the inventory
+- Puzzles and Interactables: run with "sudo" command in the terminal. Labeled as .c files. Then, depending on the puzzle, a prompt will appear in the terminal showing how the puzzle works, and what to type.
+- Help Command: "help" in the command terminal. Lists all possible commands and their uses in the players terminal. you can also do "-h" on a command to get a bit more of a detailed description of their mechanics. I.E., "cd -h" will show you a description of the cd command
 - Exiting a file or pizzle: Would be shown when doing a puzzle or inspecting an item that you just have to do "Ctrl + C" 
 - Winning: Once the player does all required puzzles to open the door to their escape, they win the entire game, showing a quick little cutscene.
+
+![Ending](https://file.garden/ZL77MieVhBA68iED/firstone/storyboard6.PNG)
+
 
 ## Feedback
 
