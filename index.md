@@ -15,6 +15,9 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - Riddle School:
   - Medium: Video Game (Flash, Newgrounds, Puzzle Solving)
   - Explanation: Focus on puzzles and room navigation, clear linear flow on progression, one of the more popular games in the genre our game is in.
+- Zero Escape 999:
+  - Medium: Video Game (DS, Point and Click, Mystery, Puzzle Solving)
+  - Explanation: Focus on puzzles, room navigation, and item management, as well as a tense atmosphere that encourages quick thinking
 
 ## Core Gameplay Mechanics (Brief)
 
@@ -46,7 +49,8 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 ## Target Contexts
 
-*Describe what kinds of formal and informal learning contexts this will be used in (e.g., courses, k-12 computer labs during free time).*
+* This would be assigned as supplementary practice in a course formally teaching systems programming that frequently uses the terminal
+* Due to the use of audio cues(potential WIP), most likely not appropriate for classroom use
 
 ## Learning Objectives
 
@@ -95,10 +99,10 @@ This is a game for one person, they use the keyboard to interact with the game w
 
 - Advance to the next level:
     - Description: Get the door unlocked and move on to the next level. 
-    - Alignment: This aligns with the learning objects because
-- *Primary Objective #2*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
+    - Alignment: This aligns with the learning objectives because in order to advance to the next level, `cd` into items will have to be used to access them, `ls` will have to be used to list all items out within a room, and `sh` will have to be used to execute files within the directory.
+- Escape the Rooms:
+    - Description: Escape the facility and complete the game
+    - Alignment: This aligns with the learning objectives because with escaping the facility and completing the game, the players will have demonstrated a comprehensive knowledge of how to move in between files via the `cd` command, how to list through items via the `ls` command, and how to execute files via the `sh` command.
 
 # Procedures/Actions
 
@@ -110,33 +114,56 @@ All actions are done via an in game terminal. This includes:
 # Rules
 
 *What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
+- If the player uses the wrong command, then a prompt appears saying the action is invalid
+- If the player goes into a directory, the scenery changes to reflect that (I.E., if you cd into a fridge, the scenery would zoom into the fridge)
+- If the player attempts to access an item they cannot, a prompt will appear saying the action is invalid
+- A player can only exit rooms if they have done all the required tasks in said room
 
 # Objects/Entities
 
-*What other things are in the world that you need to design? These may or may not directly translate to actual objects and classes.*
+- There is a bar at the top of the screen that shows the current room location
+  - At the top left, there is also a simple mini map, to keep the player from getting lost
+- In the center of the screen, there is an image of the current location
+  - Objects and entities will depend on the current location of the player
+- There is a command prompt that appears at the bottom of the screen where users can input commands
+  - Previous commands will also be listed here
 
 ## Core Gameplay Mechanics (Detailed)
 
-- *Core Gameplay Mechanic #1*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #2*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #3*: *Describe in 2 paragraphs or less, along with how it generally works*
+- Movement: Via the command prompt at the bottom of the screen. Uses "cd," or "change directory." Also used to inspect items, like you can do "cd fridge" to go towards the fridge. "cd .." allows you to go back viewing the entire room.
+- Listing Items: Via the command prompt at the bottom of the screen. Uses "ls." Shows the player a list of all items that are in the current room. 
+- Picking up Items: the "mv" command to move an item to your inventory. Could alsob eused to interact with items physically.
+- Color Coding: Int he command prompt, different types of items will be color coded, simmialr to how they are in actual bash programming. Items like containers or rooms that you can go into and inpect closely will appear blue, puzzles or interactables will be green and have the ".c" suffix. Items you can pick up could be labeled with ".png" or something simmilar
+- Using Items: equip an item with the "cat" command., Item will then be moved to the players inventory. 
+- Inventory: Will always be shown in the directory as a folder at all times, regardless of location. Command will be sometihng like "cd inventory," to go into your inventory
+- Combining Items: Would use "cat [item 1] [item 2]" to combine stuff, both files would then be combined in the inventory
+- Puzzles and Interactables: run with "sudo" command in the terminal. Labeled as .c files. Then, depending on the puzzle, a prompt will appear in the terminal showing how the puzzle works, and what to type.
+- Help Command: "help" in the command terminal. Lists all possible commands and their uses in the players terminal. you can also do "-h" on a command to get a bit more of a detailed description of their mechanics. I.E., "cd -h" will show you a description of the cd command
+- Exiting a file or pizzle: Would be shown when doing a puzzle or inspecting an item that you just have to do "Ctrl + C" 
+- Winning: Once the player does all required puzzles to open the door to their escape, they win the entire game, showing a quick little cutscene.
 
-    
 ## Feedback
 
 *Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
 
 *Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
 
+* Inputting a command will immediately show you either a text prompt ("Task succeeded") or an ainimation of you doing the task if input was valid. If not, will prompt you saying it is incorrect
+* When you inspect an object, the game zooms in on that object
+* When you pick up an object, the command terminal will say you obtained it
+* Interactable objects will be color coded as need be. Containers will be color coded to match folders in bash, and puzzles will be denoted as .c files
+* When you escape, a short cutscene will play congratulating you on winning
+* When equipping an item, a sound will play, and a text prompt will say that it was moved to your inventory
+
 # Story and Gameplay
 
 ## Presentation of Rules
 
-*Briefly describe how the player will learn the gameplay mechanics. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching mechanics iteratively and slowly.*
+Text shown on the main game screen explains the objective and interaction instructions.
 
 ## Presentation of Content
 
-*Briefly describe how the player will be taught the core material they are meant to learn. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching material iteratively and slowly.*
+The game does not attempt to teach you how to properly index and subscript a list. That is expected to be delivered with supplementary materials.
 
 ## Story (Brief)
 
@@ -155,34 +182,32 @@ The aesthetics should be semi cartoony, but down to earth style that converys a 
 ## Graphical
 
 - Characters List
-  - *Characters 1*
-  - *Characters 2*
-  - *...*
-- Textures:
-  - *Texture 1*
-  - *Texture 2*
-  - *...*
+  - Player: Is trapped in a dungeon
+    - Will not be shown due to the game being first person 
+- Textures: N/A
 - Environment Art/Textures:
-  - *Environment Texture 1*
-  - *Environment Texture 2*
-  - *...*
-
+  - Background: The background should be a dim-lit dungeon that conveys an aura of feeling uneasy.
 
 ## Audio
-
 
 *Game region/phase/time are ways of designating a particularly important place in the game.*
 
 - Music List (Ambient sound)
-  - *Game region/phase/time*: *Example 1*, *Example 2*
-  - *Game region/phase/time*: *Example 3*, *Example 4*
+  - Electronic Trance music like the [![Riddle School OST](https://www.youtube.com/playlist?list=PLG_KWhLq4Z4uEGxumMQ4yoewTcExIV3nh)
   
 *Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
 
 - Sound List (SFX)
-  - *Game Interaction*: *Example 1*, *Example 2*
-  - *Game Interaction*: *Example 3*, *Example 4*
-
+  - All of these sounds would need to be folied at a later date
+  - Equip Item
+  - Move
+  - Complete Puzzle
+  - Open/Close Door
+  - Use Key
+  - Zoom In
+  - Combine Item
+  - Use Item
+  - Move/Push item
 
 # Metadata
 
