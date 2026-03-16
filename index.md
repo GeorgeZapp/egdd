@@ -107,15 +107,15 @@ This is a game for one person, they use the keyboard to interact with the game w
 # Procedures/Actions
 
 All actions are done via an in game terminal. This includes:
-- moving in and out of places via the cd command
-- accessing the list of items via the ls command
-- interacting with objects via the sh command
+- moving in and out of places via the `cd` command
+- accessing the list of items via the `ls` command
+- interacting with objects via the `sh` command
 
 # Rules
 
 *What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
 - If the player uses the wrong command, then a prompt appears saying the action is invalid
-- If the player goes into a directory, the scenery changes to reflect that (I.E., if you cd into a fridge, the scenery would zoom into the fridge)
+- If the player goes into a directory, the scenery changes to reflect that (I.E., if you `cd` into a fridge, the scenery would zoom into the fridge)
 - If the player attempts to access an item they cannot, a prompt will appear saying the action is invalid
 - A player can only exit rooms if they have done all the required tasks in said room
 
