@@ -193,7 +193,7 @@ The aesthetics should be semi cartoony, but down to earth style that converys a 
 *Game region/phase/time are ways of designating a particularly important place in the game.*
 
 - Music List (Ambient sound)
-  - Electronic Trance music like the [![Riddle School OST]](https://www.youtube.com/playlist?list=PLG_KWhLq4Z4uEGxumMQ4yoewTcExIV3nh)
+  - Electronic Trance music like the [![Riddle School OST](https://i.ytimg.com/vi/qTSGnjoQA2A/hqdefault.jpg?sqp=-oaymwExCNACELwBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYYiBiKGIwDw==&rs=AOn4CLAQ4JtrquOvC2llCpZjTLp4a3dwqA)](https://www.youtube.com/playlist?list=PLG_KWhLq4Z4uEGxumMQ4yoewTcExIV3nh)
   
 *Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
 
