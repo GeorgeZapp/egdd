@@ -65,8 +65,8 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 ## Assessment Measures
 
 - Given a file stored in a directory, access that file.
-- Given a list stored in a variable and an index, identify the value at that position.
-- Given a list stored in a variable and a subscript, identify the values at that position.
+- Given a bunch of files listed, access those files.
+- Given files that are necessary to be executed, execute those files.
 
 # What sets this project apart?
 
