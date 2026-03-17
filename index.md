@@ -63,12 +63,17 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - Prior to the game, players should have a basic grasp on simple puzzles and logic.
 
 ## Assessment Measures
-- There is a file system with the following hierarchy: a main folder, with two subfolders within it named dar and pab. Dar has another folder in it called scr. You are currently in the folder scr. Please write the bash code that would allow you to go from scr to pab.
-- What is the difference in functionality between commands `cat` and `sudo`?
+- There is a file system with the following hierarchy: a main folder, with two subfolders within it named dar and pab. Dar has another folder in it called scr. You are currently in the folder scr. Please write the bash code that would allow you to go from scr to pab. Answer: 
+- What is the difference in functionality between commands `cat` and `sudo`?(You can only choose one answer)
+  * A. 
+  * B.
+  * C.
+  * D.
+  * E.
 - There is a folder called "Pictures" with two subfolders labeled cat and dog. I want to move the file 'Ada.png' from the 'cat' subfolder to the 'dog' subfolder. Please write the bash code to go from the 'cat' subfolder to the 'dog' subfolder.
-- Propose that you are running a program in bash, but you do not know how to exit out of it. What would you do to exit out of the code?
-- There is a file system with the following files: 'beta', 'gamma', 'omega', and 'fish'. Please write the bash code that would list out all of the files.
-- There is a specific file in the file system named 'execute.bin'. In this specific file system, there are three folders, titled "Pictures", "Downloads", and "VMs". File 'execute.bin' is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file 'execute.bin'.
+- Propose that you are running a program in bash, but you do not know how to exit out of it. What would you do to exit out of the code? Answer: Control + C
+- There is a file system with the following files: 'beta', 'gamma', 'omega', and 'fish'. Please write the bash code that would list out all of the files. Answer: 
+- There is a specific file in the file system named 'execute.bin'. In this specific file system, there are three folders, titled "Pictures", "Downloads", and "VMs". File 'execute.bin' is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file 'execute.bin'. Answer: 
 
 # What sets this project apart?
 
