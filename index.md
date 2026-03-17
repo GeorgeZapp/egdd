@@ -64,9 +64,9 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 ## Assessment Measures
 
-- Given a file stored in a directory, access that file.
-- Given a bunch of files listed, access those files.
-- Given files that are necessary to be executed, execute those files.
+- With a given file stored in a specific directory, can you access that file using the proper commands?Given a file stored in a directory, access that file.
+- With a list of given files in a specific menu, can you access those files using the proper commands?Given a bunch of files listed, access those files.
+- With a list of given files that requires executiong, can you execute those files using the proper commands? Given files that are necessary to be executed, execute those files.
 
 # What sets this project apart?
 
