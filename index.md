@@ -52,9 +52,9 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 ## Learning Objectives
 
-- Movement Through Files: By the end of the lesson, players will be able to competently use the cd command to move up and down different file systems.
-- Listing Every File: By the end of the lesson, players will be able to competently use the ls command to list all of the files in a given directory.
-- Executing Files: By the end of the lesson, players will be able to competently use the sh command to run files inside of the terrminal.
+- Movement Through Files: By the end of the lesson, players will be able to competently use the `cd` command to move up and down different file systems.
+- Listing Every File: By the end of the lesson, players will be able to competently use the `ls` command to list all of the files in a given directory.
+- Executing Files: By the end of the lesson, players will be able to competently use the `sh` command to run files inside of the terrminal.
 
 ## Prerequisite Knowledge
 
@@ -63,17 +63,17 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - Prior to the game, players should have a basic grasp on simple puzzles and logic.
 
 ## Assessment Measures
-- There is a file system with the following hierarchy: a main folder, with two subfolders within it named dar and pab. Dar has another folder in it called scr. You are currently in the folder scr. Please write the bash code that would allow you to go from scr to pab. Answer: 
-- What is the difference in functionality between commands `cat` and `sudo`?(You can only choose one answer)
-  * A. 
-  * B.
-  * C.
-  * D.
-  * E.
-- There is a folder called "Pictures" with two subfolders labeled cat and dog. I want to move the file 'Ada.png' from the 'cat' subfolder to the 'dog' subfolder. Please write the bash code to go from the 'cat' subfolder to the 'dog' subfolder.
+- There is a file system with the following hierarchy: a main folder, with two subfolders within it named dar and pab. Dar has another folder in it called scr. You are currently in the folder scr. Please write the bash code that would allow you to go from scr to pab. Answer: cd..
+- What is the difference in functionality between commands `cat` and `sudo`?(One or more are correct)
+  * A. Command `cat` allows for elevated privilege as the root user, while command `sudo` allows for the combination of files. 
+  * B. Command `sudo` allows for elevated privilege as the root user, while command `cat` allows for the combination of files. 
+  * C. Command `cat` helps with security when executing commands via avoiding direct root access, while command `sudo` helps with operation of files.
+  * D. Command `sudo` helps with security when executing commands via avoiding direct root access, while command `cat` helps with operation of files.
+  * E. Command `cat` helps with the operation of files, while command `sudo` helps with security via limiting commands to only the necessary commands. Answers: B and D
+- There is a folder called "Pictures" with two subfolders labeled cat and dog. I want to move the file 'Ada.png' from the 'cat' subfolder to the 'dog' subfolder. Please write the bash code to go from the 'cat' subfolder to the 'dog' subfolder. Answer: mv cat/Ada.png dog.
 - Propose that you are running a program in bash, but you do not know how to exit out of it. What would you do to exit out of the code? Answer: Control + C
-- There is a file system with the following files: 'beta', 'gamma', 'omega', and 'fish'. Please write the bash code that would list out all of the files. Answer: 
-- There is a specific file in the file system named 'execute.bin'. In this specific file system, there are three folders, titled "Pictures", "Downloads", and "VMs". File 'execute.bin' is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file 'execute.bin'. Answer: 
+- There is a file system with the following files: 'beta', 'gamma', 'omega', and 'fish'. Please write the bash code that would list out all of the files. Answer: ls
+- There is a specific file in the file system named 'execute.bin'. In this specific file system, there are three folders, titled "Pictures", "Downloads", and "VMs". File 'execute.bin' is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file 'execute.bin'. Answer: cd /Downloads, chmod +x execute.bin, ./execute.bin
 
 # What sets this project apart?
 
