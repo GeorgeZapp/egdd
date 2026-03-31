@@ -120,13 +120,48 @@ All actions are done via an in game terminal. This includes:
 # Rules
 
 - If the player uses the wrong command, then a prompt appears saying "that command is not applicable."
-- If the player goes into a directory, the scenery changes to reflect that (I.E., if you `cd` into a fridge, the scenery would zoom into the fridge)
-- If the player attempts to access an item they cannot, a prompt will appear saying "that item is not accessible."
-- If the player wants to ask for help, they can input a command to do so(I.E., if you input the `help` command, they will get a list of commands)
-- A player can only exit rooms if they have done all the required tasks in said room
-- If the player attempts to exit the room before they have done all the required tasks, then a prompt will appear saying "there are still tasks that need to be completed."
-- If a player has two items, then they can combine them if the items are compatible(I.E., if you `cat [paper][book]`, then would become one notebook)
-- If a player wants to combine more than two items, 
+  
+- `cd`
+    - If the player goes into a directory, the scenery changes to reflect that (I.E., if you `cd` into a fridge, the scenery would zoom into the fridge)
+    - If you do `cd ../`, you will go back a directory (I.E., if you are in the fridge directory, and do `cd ../`,
+         - If there is no parent directory, the player's terminal will show an error stating "No parent directory"
+    - If the player attempts to access an item they cannot, a prompt will appear saying "that item is not accessible."
+    
+- `ls`
+    - When used, will list out all current items and directories in the players current position via text in the terminal
+         - Items in Blue text are directories
+         - Items in Green text are executables
+         - Items in Magenta text are images
+         - Anything else will be in White
+         - Any text that is bolded is unaccesible to the player
+    - `ls [directory]` will show said directories files
+    - Players will, at all times, be able to do `ls ./inventory` to see their inventory
+          
+- `mv`
+    - When used correctly, a file or orbject will be moved into a designated directory
+    - Format is: `mv [filename] [destination]`
+         - You are also able to move directories, which will be shown in the game world by moving the physical object
+         - You are also able to move multiple files, I.E. `mv text1.txt text2.text folder/`
+    - If the file does not exist, the player will be prompted in the terminal that said file does not exist
+    - If the directory does not exist, the player will be prompted in the terminal that said directory does not exist
+    - If the file is unable to be moved, the player will be prompted in the termal that said directory does not exist
+    - Players will always be able to do `mv [item] inventory` at all times to move items into their inventory
+    
+- `help`
+    - Lists out all commands and a brief description of what they do
+    - You are also able to add the suffix `-h` to any command to see what they specifically do
+         - You are unable to do `-h` on its own. If a player does, the terminal will prompt them saying that they are unable to do that
+         - you must do `[base command] -h`. Anything additional will also be invalid.
+         - I.E., `cd -h` will be allowed, and will show the description, but `cd ../ -h` wont 
+      
+- `sudo`
+    - s
+      
+- `cat`
+    - s
+      
+- `ctrl + c`
+    - s
 
 # Objects/Entities
 
