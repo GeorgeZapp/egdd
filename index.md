@@ -76,7 +76,7 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - There is a folder called "Pictures" with two subfolders labeled cat and dog. I want to move the file 'Ada.png' from the 'cat' subfolder to the 'dog' subfolder. Please write the bash code to go from the 'cat' subfolder to the 'dog' subfolder. Answer: mv cat/Ada.png dog.
 - Propose that you are running a program in bash, but you do not know how to exit out of it. What would you do to exit out of the code? Answer: Control + C
 - There is a file system with the following files: 'beta', 'gamma', 'omega', and 'fish'. Please write the bash code that would list out all of the files. Answer: ls
-- There is a specific file within the file system named "execute.sh". There is a specific file system which has three folders, titled "Pictures", "Downloads", and "VMs". File "execute.exe" is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file "execute.bin". Answer: cd /Downloads, ./execute.exe
+- There is a specific file within the file system named "execute.sh". There is a specific file system which has three folders, titled "Pictures", "Downloads", and "VMs". File "execute.exe" is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file "execute.exe". Answer: cd /Downloads, ./execute.exe
 
 # What sets this project apart?
 
