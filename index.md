@@ -121,13 +121,14 @@ All actions are done via an in game terminal. This includes:
 
 # Rules
 
-- If the player uses the wrong command, then a prompt appears saying the action is invalid
+- If the player uses the wrong command, then a prompt appears saying "that command is not applicable."
 - If the player goes into a directory, the scenery changes to reflect that (I.E., if you `cd` into a fridge, the scenery would zoom into the fridge)
-- If the player attempts to access an item they cannot, a prompt will appear saying the action is invalid
+- If the player attempts to access an item they cannot, a prompt will appear saying "that item is not accessible."
 - If the player wants to ask for help, they can input a command to do so(I.E., if you input the `help` command, they will get a list of commands)
 - A player can only exit rooms if they have done all the required tasks in said room
-- If the player attempts to exit the room before they have done all the required tasks, then a prompt will appear saying the action is invalid
-- If a player has two items, then they can combine them if the items are compatible(I.E., if you `cat [paper][book]`, then would become one notebook
+- If the player attempts to exit the room before they have done all the required tasks, then a prompt will appear saying "there are still tasks that need to be completed."
+- If a player has two items, then they can combine them if the items are compatible(I.E., if you `cat [paper][book]`, then would become one notebook)
+- If a player wants to combine more than two items, 
 
 # Objects/Entities
 
