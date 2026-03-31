@@ -28,10 +28,9 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - In case someone is stuck, there will be a `help` command that lists all of the embedded commands in the game(I.E., if someone is having trouble with the `cd` command, `help` can be used to further explain and elaborate on how to use the `cd` command).
 - If there is a possibility, be able to combine the two items(I.E., if there was an item that needed two or more inputs, then the `cat[item1][item2]` command could be useful).
 - If a player wants to, they can have the ability to quit via the ctrl + c command.
-- For running an overall level, the command `sudo` can be utilized.
 - To pick up an item, the player can run the `mv` command to move it to your inventory
 - For certain objects, you can also use the `mv` command to physically move them in the world
-- To interact with puzzles, players will use the `sudo` command. All interactable puzzles are labeled as `.c` files
+- To interact with puzzles, players will run executable files in the file system
 - If at any time the player needs help with commands, they can run `help` for a menu of all the commands, or `[command] -h` for more info on a specific command
 
 # Learning Aspects
@@ -56,7 +55,8 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 - Movement Through Files: By the end of the lesson, players will be able to competently use the `cd` command to move up and down different file systems.
 - Listing Every File: By the end of the lesson, players will be able to competently use the `ls` command to list all of the files in a given directory.
-- Executing Files: By the end of the lesson, players will be able to competently use the `sudo` command to run files inside of the terrminal.
+- Executing Files: By the end of the lesson, players will be able to run files and executables in the terminal.
+- Moving Files and Directories: By the end of the lesson, players will learn how to use the `mv` command to move files to and fro directories.
 
 ## Prerequisite Knowledge
 
@@ -96,26 +96,25 @@ This is a game for one person, they use the keyboard to interact with the game w
 
 - Advance to the next level:
     - Description: Get the door unlocked and move on to the next level. 
-    - Alignment: This aligns with the learning objectives because in order to advance to the next level, `cd` into items will have to be used to access them, `ls` will have to be used to list all items out within a room, and `sudo` will have to be used to execute files within the directory.
+    - Alignment: This aligns with the learning objectives because in order to advance to the next level, `cd` into items will have to be used to access them, `ls` will have to be used to list all items out within a room, and `./[filename].exe` will have to be used to execute files within the directory.
 - Escape the Rooms:
     - Description: Escape the facility and complete the game
-    - Alignment: This aligns with the learning objectives because with escaping the facility and completing the game, the players will have demonstrated a comprehensive knowledge of how to move in between files via the `cd` command, how to list through items via the `ls` command, and how to execute files via the `sudo` command.
+    - Alignment: This aligns with the learning objectives because with escaping the facility and completing the game, the players will have demonstrated a comprehensive knowledge of how to move in between files via the `cd` command, how to list through items via the `ls` command, and how to execute files via the `./[filename].exe` command.
 - Solve Puzzles: 
     - Description: Fully Complete a minigame in order to gain either more information or a new item
-    - Alignment: This aligns with the learning objectives because solving these puzzles requires the player to utilize different aspects of the presented file system, by combining items with `cat [item1][item2]`, using interactables with `sudo` in conjunction with .c file types, and moving elements in the game with `mv`.
+    - Alignment: This aligns with the learning objectives because solving these puzzles requires the player to utilize different aspects of the presented file system, by combining items with `cat [item1][item2]`, using interactables that are represented as executable files that require the user to run them, and moving elements in the game with `mv`.
   
 # Procedures/Actions
 
 All actions are done via an in game terminal. This includes:
 - moving in and out of places via the `cd` command
 - accessing the list of items via the `ls` command
-- interacting with objects via the `sudo` command
 - getting a list of all of the possible commands via the`help` command
 - combining two items together with the `cat` command
 - quitting out of specific puzzles with `ctrl + c`
 - moving items into your inventory with the `mv` command
 - moving elements in the game with the `mv` command
-- interacting with puzzles via the `sudo [puzzlename].c`
+- interacting with puzzles via the terminal by typing something along the lines of `./[filename].exe`
 
 # Rules
 
@@ -154,14 +153,24 @@ All actions are done via an in game terminal. This includes:
          - you must do `[base command] -h`. Anything additional will also be invalid.
          - I.E., `cd -h` will be allowed, and will show the description, but `cd ../ -h` wont 
       
-- `sudo`
-    - s
+- `./[filename].exe`
+    - Runs a given exe file
+         - If the file is not a '.exe' file, the terminal will print out a message saying that only .exe files can be run
       
 - `cat`
-    - s
+    - Can only be used on .txt files
+         - If used on a non-txt file, the terminal will print out a message saying that cat can only be used on text files
+    - Can combine two items
+         - `cat [fileA].txt [fileB].txt`
+         - The combined items will be sent automatically to the inventory
+         - If used on more than 2 files, the command fails, and the terminal will print out a message saying that only 2 text files can be combined
+    - Can show the description of an item
+         - `cat [filename].txt`
       
 - `ctrl + c`
-    - s
+    - Exits out of a puzzle/.exe file
+    - Only works is a .exe file is running
+    - If nothing is running, the terminal will print out a message stating that no executable is running
 
 # Objects/Entities
 
@@ -194,7 +203,7 @@ All actions are done via an in game terminal. This includes:
 
 - Inventory: Will always be shown in the directory as a folder at all times, regardless of location. Command will be sometihng like "cd inventory," to go into your inventory
 - Combining Items: Would use "cat [item 1] [item 2]" to combine stuff, both files would then be combined in the inventory
-- Puzzles and Interactables: run with "sudo" command in the terminal. Labeled as .c files. Then, depending on the puzzle, a prompt will appear in the terminal showing how the puzzle works, and what to type.
+- Puzzles and Interactables: run as executable files in the terminal. Labeled as .c files. Then, depending on the puzzle, a prompt will appear in the terminal showing how the puzzle works, and what to type.
 - Help Command: "help" in the command terminal. Lists all possible commands and their uses in the players terminal. you can also do "-h" on a command to get a bit more of a detailed description of their mechanics. I.E., "cd -h" will show you a description of the cd command
 - Exiting a file or pizzle: Would be shown when doing a puzzle or inspecting an item that you just have to do "Ctrl + C" 
 - Winning: Once the player does all required puzzles to open the door to their escape, they win the entire game, showing a quick little cutscene.
