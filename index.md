@@ -129,7 +129,7 @@ All actions are done via an in game terminal. This includes:
 - If a player wants to combine more than two items, then a prompt appears saying "cannot combine more than two items."
 - If the player goes out of a directory, the scenery changes to reflect that (I.E., if you `cd` out of a refrigerator, the scenery would zoom out of the fridge)
 - If a player picks up an item, then a prompt will appear saying "item is now executable."
-- A player can ragequit if they input `ctrl + c`.
+- A player can reset the puzzle if they input `ctrl + c`.
 
 # Objects/Entities
 
