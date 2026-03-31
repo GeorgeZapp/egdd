@@ -67,11 +67,12 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 ## Assessment Measures
 - There is a file system with the following hierarchy: a main folder, with two subfolders within it named dar and pab. Dar has another folder in it called scr. You are currently in the folder scr. Please write the bash code that would allow you to go from scr to pab. Answer: cd..
 - What is the difference in functionality between commands `cat` and `sudo`?(One or more are correct)
-  * A. Command `cat` allows for elevated privilege as the root user, while command `sudo` allows for the combination of files. 
-  * B. Command `sudo` allows for elevated privilege as the root user, while command `cat` allows for the combination of files. 
-  * C. Command `cat` helps with security when executing commands via avoiding direct root access, while command `sudo` helps with operation of files.
-  * D. Command `sudo` helps with security when executing commands via avoiding direct root access, while command `cat` helps with operation of files.
-  * E. Command `cat` helps with the operation of files, while command `sudo` helps with security via limiting commands to only the necessary commands. Answers: B and D
+  - What is the difference in functionality between the command `cat` and running an executable file?(One or more are correct)
+  * A. Command `cat` allows for the combination of files, while running an executable file allows for the file to be ran. 
+  * B. Command `cat` allows for the file to be ran, while running an executable file allows for the combination of files. 
+  * C. Command `cat` helps with the inspection of files, while running an executable file helps with the examination of the output.
+  * D. Command `cat` helps with the examination of the output, while running an executable file helps with the inspection of files. 
+  * E. Command `cat` prints out readable text, while running an executable file allows for the combination of files. Answers: A and C
 - There is a folder called "Pictures" with two subfolders labeled cat and dog. I want to move the file 'Ada.png' from the 'cat' subfolder to the 'dog' subfolder. Please write the bash code to go from the 'cat' subfolder to the 'dog' subfolder. Answer: mv cat/Ada.png dog.
 - Propose that you are running a program in bash, but you do not know how to exit out of it. What would you do to exit out of the code? Answer: Control + C
 - There is a file system with the following files: 'beta', 'gamma', 'omega', and 'fish'. Please write the bash code that would list out all of the files. Answer: ls
