@@ -75,7 +75,7 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - There is a folder called "Pictures" with two subfolders labeled cat and dog. I want to move the file 'Ada.png' from the 'cat' subfolder to the 'dog' subfolder. Please write the bash code to go from the 'cat' subfolder to the 'dog' subfolder. Answer: mv cat/Ada.png dog.
 - Propose that you are running a program in bash, but you do not know how to exit out of it. What would you do to exit out of the code? Answer: Control + C
 - There is a file system with the following files: 'beta', 'gamma', 'omega', and 'fish'. Please write the bash code that would list out all of the files. Answer: ls
-- There is a specific file in the file system named 'execute.sh'. In this specific file system, there are three folders, titled "Pictures", "Downloads", and "VMs". File 'execute.bin' is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file 'execute.bin'. Answer: cd /Downloads, chmod +x execute.sh, ./execute.sh OR bash execute.sh(this requires read permission).
+- There is a specific file system which has three folders, titled "Pictures", "Downloads", and "Sudo". File "sudo.c" is in the folder "Sudo". Using the proper commands, please write the bash code that would execute the file "sudo.c". Answer: cd /Sudo, sudo /Sudo/sudo.c.
 
 # What sets this project apart?
 
@@ -126,7 +126,10 @@ All actions are done via an in game terminal. This includes:
 - A player can only exit rooms if they have done all the required tasks in said room
 - If the player attempts to exit the room before they have done all the required tasks, then a prompt will appear saying "there are still tasks that need to be completed."
 - If a player has two items, then they can combine them if the items are compatible(I.E., if you `cat [paper][book]`, then would become one notebook)
-- If a player wants to combine more than two items, 
+- If a player wants to combine more than two items, then a prompt appears saying "cannot combine more than two items."
+- If the player goes out of a directory, the scenery changes to reflect that (I.E., if you `cd` out of a refrigerator, the scenery would zoom out of the fridge)
+- If a player picks up an item, then a prompt will appear saying "item is now executable."
+- A player can ragequit if they input `ctrl + c`.
 
 # Objects/Entities
 
