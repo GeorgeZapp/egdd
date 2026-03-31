@@ -31,6 +31,10 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - If there is a possibility, be able to combine the two items(I.E., if there was an item that needed two or more inputs, then the `cat[item1][item2]` command could be useful).
 - If a player wants to, they can have the ability to quit via the ctrl + c command.
 - For running an overall level, the command `sudo` can be utilized.
+- To pick up an item, the player can run the `mv` command to move it to your inventory
+- For certain objects, you can also use the `mv` command to physically move them in the world
+- To interact with puzzles, players will use the `sudo` command. All interactable puzzles are labeled as `.c` files
+- If at any time the player needs help with commands, they can run `help` for a menu of all the commands, or `[command] -h` for more info on a specific command
 
 # Learning Aspects
 
@@ -98,13 +102,22 @@ This is a game for one person, they use the keyboard to interact with the game w
 - Escape the Rooms:
     - Description: Escape the facility and complete the game
     - Alignment: This aligns with the learning objectives because with escaping the facility and completing the game, the players will have demonstrated a comprehensive knowledge of how to move in between files via the `cd` command, how to list through items via the `ls` command, and how to execute files via the `sh` command.
-
+- Solve Puzzles: 
+    - Description: Fully Complete a minigame in order to gain either more information or a new item
+    - Alignment: This aligns with the learning objectives because solving these puzzles requires the player to utilize different aspects of the presented file system, by combining items with `cat [item1][item2]`, using interactables with `sudo` in conjunction with .c file types, and moving elements in the game with `mv`.
+  
 # Procedures/Actions
 
 All actions are done via an in game terminal. This includes:
 - moving in and out of places via the `cd` command
 - accessing the list of items via the `ls` command
 - interacting with objects via the `sh` command
+- getting a list of all of the possible commands via the`help` command
+- combining two items together with the `cat` command
+- quitting out of specific puzzles with `ctrl + c`
+- moving items into your inventory with the `mv` command
+- moving elements in the game with the `mv` command
+- interacting with puzzles via the `sudo [puzzlename].c`
 
 # Rules
 
@@ -168,7 +181,7 @@ Text shown on the main game screen explains the objective and interaction instru
 
 ## Presentation of Content
 
-The game does not attempt to teach you how to properly index and subscript a list. That is expected to be delivered with supplementary materials.
+The main content of the learning objective will be presented in gameplay by having the user use a specially designed file system that suits the game world, that is made to teach the user file management at the terminal level, as well as basic bash commands. What each command does will not only be shown in the player's terminal, but also represented in the actual game world via animation. For example, if a player wants to combine a piece of chewing gum with a pencil, they would do soemthing like `cat pencil chewing_gum`. The terminal will give the user a prompt describing what happens, and the game world will show the two items physically combined.
 
 ## Story (Brief)
 
