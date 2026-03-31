@@ -25,7 +25,6 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - Use ls to list all items in a given are or room (I.E., I would do `ls` after I `cd` into a fridge to see its contents).
 - Use color coding to indicate what items you can pick up or not(I.E., An item that can be picked up would be coded white).
 - Different items will be color coded to match their equivalants in bash (I.E., something you can go into will be color coded like a folder, something thats runable will be color coded to match, items that are white can be picked up).
-- Use commands to utilize items(I.E., use the `./sh command` to utilize what item you want to use via executing the file).
 - In case someone is stuck, there will be a `help` command that lists all of the embedded commands in the game(I.E., if someone is having trouble with the `cd` command, `help` can be used to further explain and elaborate on how to use the `cd` command).
 - If there is a possibility, be able to combine the two items(I.E., if there was an item that needed two or more inputs, then the `cat[item1][item2]` command could be useful).
 - If a player wants to, they can have the ability to quit via the ctrl + c command.
@@ -57,7 +56,7 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 
 - Movement Through Files: By the end of the lesson, players will be able to competently use the `cd` command to move up and down different file systems.
 - Listing Every File: By the end of the lesson, players will be able to competently use the `ls` command to list all of the files in a given directory.
-- Executing Files: By the end of the lesson, players will be able to competently use the `sh` command to run files inside of the terrminal.
+- Executing Files: By the end of the lesson, players will be able to competently use the `sudo` command to run files inside of the terrminal.
 
 ## Prerequisite Knowledge
 
@@ -97,10 +96,10 @@ This is a game for one person, they use the keyboard to interact with the game w
 
 - Advance to the next level:
     - Description: Get the door unlocked and move on to the next level. 
-    - Alignment: This aligns with the learning objectives because in order to advance to the next level, `cd` into items will have to be used to access them, `ls` will have to be used to list all items out within a room, and `sh` will have to be used to execute files within the directory.
+    - Alignment: This aligns with the learning objectives because in order to advance to the next level, `cd` into items will have to be used to access them, `ls` will have to be used to list all items out within a room, and `sudo` will have to be used to execute files within the directory.
 - Escape the Rooms:
     - Description: Escape the facility and complete the game
-    - Alignment: This aligns with the learning objectives because with escaping the facility and completing the game, the players will have demonstrated a comprehensive knowledge of how to move in between files via the `cd` command, how to list through items via the `ls` command, and how to execute files via the `sh` command.
+    - Alignment: This aligns with the learning objectives because with escaping the facility and completing the game, the players will have demonstrated a comprehensive knowledge of how to move in between files via the `cd` command, how to list through items via the `ls` command, and how to execute files via the `sudo` command.
 - Solve Puzzles: 
     - Description: Fully Complete a minigame in order to gain either more information or a new item
     - Alignment: This aligns with the learning objectives because solving these puzzles requires the player to utilize different aspects of the presented file system, by combining items with `cat [item1][item2]`, using interactables with `sudo` in conjunction with .c file types, and moving elements in the game with `mv`.
@@ -110,7 +109,7 @@ This is a game for one person, they use the keyboard to interact with the game w
 All actions are done via an in game terminal. This includes:
 - moving in and out of places via the `cd` command
 - accessing the list of items via the `ls` command
-- interacting with objects via the `sh` command
+- interacting with objects via the `sudo` command
 - getting a list of all of the possible commands via the`help` command
 - combining two items together with the `cat` command
 - quitting out of specific puzzles with `ctrl + c`
