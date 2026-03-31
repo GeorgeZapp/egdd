@@ -75,7 +75,7 @@ You wake up in some weird, dimly-lit room, not knowing where you are or how you 
 - There is a folder called "Pictures" with two subfolders labeled cat and dog. I want to move the file 'Ada.png' from the 'cat' subfolder to the 'dog' subfolder. Please write the bash code to go from the 'cat' subfolder to the 'dog' subfolder. Answer: mv cat/Ada.png dog.
 - Propose that you are running a program in bash, but you do not know how to exit out of it. What would you do to exit out of the code? Answer: Control + C
 - There is a file system with the following files: 'beta', 'gamma', 'omega', and 'fish'. Please write the bash code that would list out all of the files. Answer: ls
-- There is a specific file in the file system named 'execute.sh'. In this specific file system, there are three folders, titled "Pictures", "Downloads", and "VMs". File 'execute.bin' is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file 'execute.bin'. Answer: cd /Downloads, chmod +x execute.sh, ./execute.sh OR bash execute.sh(this requires read permission).
+- There is a specific file within the file system named "execute.sh". There is a specific file system which has three folders, titled "Pictures", "Downloads", and "VMs". File "execute.bin" is in the folder "Downloads". Using the proper commands, please write the bash code that would execute the file "execute.bin". Answer: cd /Downloads, sh execute.bin
 
 # What sets this project apart?
 
@@ -174,12 +174,14 @@ All actions are done via an in game terminal. This includes:
 
 # Objects/Entities
 
-- There is a bar at the top of the screen that shows the current room location
-  - At the top left, there is also a simple mini map, to keep the player from getting lost
-- In the center of the screen, there is an image of the current location
-  - Objects and entities will depend on the current location of the player
+- There is a bar at the top of the screen that shows the current room location. The bar will not only have the location, but it will also have the name of the puzzle.
+  - At the top left, there is also a simple mini map, to keep the player from getting lost. The mini map will have a layout of every puzzle there is within the game, in which the puzzle that the player is in will be color coded green.
+- In the center of the screen, there is an image of the current location. 
+  - Objects and entities will depend on the current location of the player. For example, some puzzles could have a key, while others could have some dice or some buckets. Some puzzles will have different items that could be combined, such as some water or some buckets, chemicals and flasks to create potions. 
 - There is a command prompt that appears at the bottom of the screen where users can input commands
-  - Previous commands will also be listed here
+  - Previous commands will also be listed here. There will be a terminal in which players can see the previous commands that they inputted. For example, if the last command was `help`, the command that would be the lowest in the command terminal would be `help`.
+- There is an inventory that showcases the items that the player has. The inventory will be used as a way for the player to get out of the puzzles through the utilization of those items.
+  - Within the inventory, there will also be descriptions of these individual items. Each individual items will have a unique description that will facilitate in the player getting out.
 
 ## Core Gameplay Mechanics (Detailed)
 
